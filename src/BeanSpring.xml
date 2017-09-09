@@ -10,7 +10,7 @@
    <bean id = "spellChecker" class = "com.tutorialspoint.spring.SpellChecker"></bean>
   <!-- Definition for textEditor bean -->
    <bean id = "textEditor" class = "com.tutorialspoint.spring.TextEditor">
-      <constructor-arg ref = "spellChecker"/>
+       <property name = "spellChecker" ref = "spellChecker"/>
    </bean>
 
 </beans>
